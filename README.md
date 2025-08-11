@@ -89,20 +89,6 @@ data.company.title    // "Sales Manager"
 | Pseudoclases | `:first-child`, `:last-child` | Estados o posiciones especiales |
 | Selector múltiple | `h2, h3, .badge` | Múltiples selectores separados por comas |
 
-### API y datos utilizados
-
-- **Endpoint principal**: `https://dummyjson.com/users/1`
-- **Documentación**: [DummyJSON Users](https://dummyjson.com/docs/users)
-- **Usuarios disponibles**: IDs del 1 al 30
-- **Ejemplo de respuesta**: Ver archivo `pruebas.json`
-
-### Entregable
-
-- Una página funcional que cargue datos de DummyJSON
-- Código comentado explicando cada selector utilizado
-- Experimentación con al menos 3 usuarios diferentes (cambiando el endpoint)
-- Implementación de al menos un selector adicional personalizado
-
 ---
 
 **Tip**: Usa siempre la consola del navegador para explorar la estructura de los datos antes de escribir tu código. Con `console.log(data)` puedes ver toda la información disponible.
