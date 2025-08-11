@@ -3,34 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - Mi Marca</title>
+  <title>Perfil de Usuario - DummyJSON</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header id="main-header">
-    <h1 id="brand-title">Nombre de la Marca</h1>
-  <!-- Menú eliminado para la práctica -->
+    <h1 id="brand-title">Perfil de Usuario</h1>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#perfil" data-section="profile">Perfil</a></li>
+        <li class="nav-item"><a href="#contacto" data-section="contact">Contacto</a></li>
+        <li class="nav-item"><a href="#empresa" data-section="company">Empresa</a></li>
+      </ul>
+    </nav>
   </header>
-  <section>
-    <article>
-      <p class="destacado">Bienvenido a la landing page de tu marca favorita.</p>
-      <div>
-        <p>Este texto está dentro de un div.</p>
-      </div>
-  <button id="call-to-action">Call to Action</button>
-      <div class="bloque-imagen">
-        <img id="img-marca" src="https://placehold.co/300x150.png?text=Imagen+Marca" alt="Imagen de la marca" style="width:100%;height:auto;">
-        <p id="texto-marca">Imagen principal de la marca</p>
-      </div>
-      <div class="bloque-imagen">
-        <img id="img-producto" src="https://placehold.co/200x100.png?text=Producto" alt="Producto destacado" style="width:100%;height:auto;">
-        <p id="texto-producto">Producto destacado</p>
-      </div>
-    </article>
-  </section>
+  
+  <main>
+    <section id="controls">
+      <button id="cargar-usuario" class="btn-principal">Cargar Usuario desde API</button>
+      <button id="cambiar-estilo" class="btn-secundario" data-action="style">Cambiar Estilo</button>
+    </section>
+
+    <section id="perfil-usuario">
+      <article class="tarjeta-usuario">
+        <div class="imagen-perfil">
+          <img id="usuario-imagen" src="https://placehold.co/200x200.png?text=Usuario" alt="Foto del usuario">
+        </div>
+        
+        <div class="info-basica">
+          <h2 id="usuario-nombre" class="destacado">Nombre del Usuario</h2>
+          <p id="usuario-email">email@ejemplo.com</p>
+          <p id="usuario-telefono">+00 000-000-0000</p>
+          <span id="usuario-edad" class="badge">28 años</span>
+        </div>
+
+        <div class="direccion" data-seccion="address">
+          <h3>Dirección</h3>
+          <p id="direccion-calle">Calle Principal 123</p>
+          <p>
+            <span id="direccion-ciudad">Ciudad</span>, 
+            <span id="direccion-estado">Estado</span> 
+            <span id="direccion-codigo">12345</span>
+          </p>
+          <p id="direccion-pais">País</p>
+        </div>
+
+        <div class="trabajo" data-seccion="work">
+          <h3>Información Laboral</h3>
+          <p id="empresa-nombre" class="destacado">Nombre de la Empresa</p>
+          <p id="empresa-puesto">Puesto de Trabajo</p>
+          <p id="empresa-departamento">Departamento</p>
+        </div>
+
+        <div class="caracteristicas" data-tipo="personal">
+          <h3>Características</h3>
+          <div class="lista-caracteristicas">
+            <span id="cabello-color" class="caracteristica">Color de cabello</span>
+            <span id="cabello-tipo" class="caracteristica">Tipo de cabello</span>
+            <span id="ojos-color" class="caracteristica">Color de ojos</span>
+            <span id="grupo-sanguineo" class="caracteristica">Grupo sanguíneo</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Mi Marca</p>
+    <p id="footer-text">&copy; 2025 Práctica con DummyJSON API</p>
   </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>
