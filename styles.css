@@ -1,0 +1,94 @@
+
+
+:root {
+  --color-negro: #000000;
+  --color-amarillo: #ffd600;
+  --color-amarillo-claro: #fff023;
+  --color-amarillo-neon: #f7ff00;
+  --color-blanco: #ffffff;
+  --color-gris: #f5f5f5;
+  --color-texto: #222222;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--color-blanco);
+  color: var(--color-texto);
+}
+
+
+header {
+  background: var(--color-gris);
+  color: var(--color-negro);
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 2px solid var(--color-amarillo);
+}
+
+
+.nav-item {
+  display: inline-block;
+  margin: 0 1em;
+  cursor: pointer;
+  color: var(--color-texto);
+  background: transparent;
+}
+
+
+.nav-item.seleccionado {
+  font-weight: bold;
+  color: var(--color-amarillo);
+  background: var(--color-gris);
+  border-bottom: 2px solid var(--color-amarillo);
+}
+
+
+.destacado {
+  background: var(--color-amarillo-claro);
+  color: var(--color-texto);
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+[hidden] {
+  display: none;
+}
+
+
+button[data-rol] {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  background: var(--color-amarillo);
+  color: var(--color-texto);
+  border: 2px solid var(--color-amarillo-neon);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+input[type="text"] {
+  border: 2px solid var(--color-amarillo);
+  margin: 0.5em;
+  background: var(--color-blanco);
+  color: var(--color-texto);
+}
+
+
+input[type="password"] {
+  border: 2px solid var(--color-amarillo-claro);
+  margin: 0.5em;
+  background: var(--color-blanco);
+  color: var(--color-texto);
+}
+
+
+footer {
+  background: var(--color-gris);
+  color: var(--color-texto);
+  text-align: center;
+  padding: 1em 0;
+  border-top: 2px solid var(--color-amarillo);
+}
